@@ -1,0 +1,53 @@
+@font-face {
+  font-family: ds-digital;
+  font-style: normal;
+  font-weight: 700;
+  src: local("DS-Digital"), url(https://fonts.cdnfonts.com/s/15049/DS-DIGIB.woff) format("woff");
+}
+body {
+  background-color: rgb(21, 13, 60);
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+ol {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  list-style: none;
+  padding: 0;
+}
+.calendario {
+  font-size: 20px;
+  border-radius: 30px;
+  height: 250px;
+  width: 300px;
+  color: #218401;
+  text-shadow: 0 0 7px #218401, 0 0 10px #218401, 0 0 21px #218401, 0 0 42px #218401, 0 0 50px #218401, 0 0 70px #218401,
+    0 0 90px #37ff00, 0 0 100px #37ff00;
+}
+.reloj {
+  margin-top: 100px;
+  font-family: ds-digital;
+}
+.reloj .hora {
+  width: 180px;
+  position: relative;
+  bottom: 100px;
+  left: 60px;
+}
+.hora h4 {
+  color: #f2f9ff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #0878a9, 0 0 42px #0878a9, 0 0 82px #0878a9, 0 0 92px #0878a9,
+    0 0 102px #0878a9, 0 0 151px #0878a9;
+  font-size: 43px;
+}
+.ampm {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0878a9, 0 0 82px #0878a9, 0 0 92px #0878a9,
+    0 0 102px #0878a9, 0 0 151px #0878a9;
+}
+.first-day {
+  grid-column-start: 5;
+}
