@@ -18,33 +18,33 @@
   <body>
     <header></header>
     <main class="text-center container">
-      <section>
-        <h1 class="text-white">RELOJ</h1>
+      <section class="my-2">
+        <h1 class="text-white">RELOJ Y CALENDARIO</h1>
         <hr class="text-white" />
       </section>
       <section class="calendario">
         <h2 id="mesAnio">Enero 2023</h2>
-        <ol class="list-unstyled" id="fechaDia">
-          <li class="nombreDia">Lun</li>
-          <li class="nombreDia">Mar</li>
-          <li class="nombreDia">Mié</li>
-          <li class="nombreDia">Jue</li>
-          <li class="nombreDia">Vie</li>
-          <li class="nombreDia">Sáb</li>
-          <li class="nombreDia">Dom</li>
+        <ol class="list-unstyled" id="dia">
+          <li>Lun</li>
+          <li>Mar</li>
+          <li>Mie</li>
+          <li>Jue</li>
+          <li>Vie</li>
+          <li>Sab</li>
+          <li>Dom</li>
         </ol>
-        <hr>
-        <ol id="dias">
+        <hr class="mt-0">
+        <ol id="fecha">
         </ol>
       </section>
       <section class="reloj">
         <img src="./src/img/reloj.png" class="img-fluid" alt="reloj digital" />
-        <div class="d-flex  align-items-center hora">
+        <div class="d-flex align-items-center ledsReloj">
           <div class="me-3">
-            <p class="m-0">PM</p>
-            <p class="m-0">AM</p>
+            <p class="m-0" id="pm">PM</p>
+            <p class="m-0" id="am">AM</p>
           </div>
-          <h4 class="bg-black rounded-3">00:00:00</h4>
+          <h4 id="hora"><h4>
         </div>
       </section>
     </main>
