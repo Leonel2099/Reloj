@@ -1,6 +1,6 @@
 function obtenerHora() {
   let fechaActual = new Date();
-  if (fechaActual.getHours()) {
+  if (fechaActual.getHours() >= 12 ) {
     let tarde = document.querySelector("#pm");
     tarde.classList.add("ampm");
   } else {

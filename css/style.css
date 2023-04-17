@@ -23,7 +23,6 @@ ol {
   font-family: "Dongle", sans-serif;
   font-size: 30px;
   border-radius: 30px;
-  height: 250px;
   width: 300px;
   color: #218401;
   text-shadow: 0 0 7px #218401, 0 0 10px #218401, 0 0 21px #218401, 0 0 42px #218401, 0 0 50px #218401, 0 0 70px #218401,
@@ -32,23 +31,24 @@ ol {
 #dia {
   font-size: 33px;
 }
-#mesAnio{
-    font-size: 50px;
+#mesAnio {
+  font-size: 50px;
 }
 .reloj {
-  margin-top: 150px;
+  background-color: rgb(66, 66, 66);
+  border: 6px white solid;
+  border-radius: 30px;
   font-family: ds-digital;
 }
-.reloj .ledsReloj {
-  width: 180px;
-  position: relative;
-  bottom: 100px;
-  left: 60px;
+.ledsReloj {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.ledsHora {
+  border-radius: 20px;
 }
 #hora {
-  background-color: #000000;
-  border-radius: 20px;
-  width: 300px;
   color: #f2f9ff;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #0878a9, 0 0 42px #0878a9, 0 0 82px #0878a9, 0 0 92px #0878a9,
     0 0 102px #0878a9, 0 0 151px #0878a9;
@@ -69,4 +69,21 @@ ol {
 .diasMesAnterior {
   color: #2284012d;
   text-shadow: 0 0 7px #2284012d, 0 0 10px #2284012d, 0 0 21px #2284012d, 0 0 42px #2284012d;
+}
+@media screen and (min-width: 575px) and (max-width: 992px) {
+  .reloj {
+    font-size: 25px;
+  }
+  #hora {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1999px) {
+  .reloj {
+    width: 40%;
+    font-size: 40px;
+  }
+  #hora {
+    font-size: 70px;
+  }
 }
