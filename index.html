@@ -16,14 +16,15 @@
     <title>Reloj</title>
   </head>
   <body>
-    <header></header>
-    <main >
+    <main>
       <section class="my-2 text-center container">
         <h1 class="text-white">RELOJ Y CALENDARIO</h1>
       </section>
       <hr class="text-white" />
-      <section class="text-center d-flex flex-column align-items-center flex-sm-row align-items-sm-center justify-content-evenly">
-        <aside class="calendario ">
+      <section
+        class="text-center d-flex flex-column align-items-center flex-sm-row align-items-sm-center justify-content-evenly"
+      >
+        <aside class="calendario">
           <h2 id="mesAnio">Enero 2023</h2>
           <ol class="list-unstyled" id="dia">
             <li>Lun</li>
@@ -37,7 +38,7 @@
           <hr class="mt-0" />
           <ol id="fecha"></ol>
         </aside>
-        <aside class="reloj mt-5 mt-sm-0 p-3 ">
+        <aside class="reloj mt-5 mt-sm-0 p-3">
           <div class="my-2 ledsReloj">
             <div class="me-3">
               <p class="m-0" id="pm">PM</p>
@@ -50,7 +51,23 @@
         </aside>
       </section>
     </main>
-    <footer></footer>
+    <footer class="p-1 mt-4 text-center">
+      <section class="d-flex flex-column ">
+        <aside class="my-5">
+          <h5 class="text-secondary fs-1">Nuestras redes</h5>
+          <div class="text-center">
+            <a href="#" class="link-secondary"><i class="bi bi-facebook fs-1"></i></a>
+            <a href="#" class="link-secondary"> <i class="bi bi-twitter fs-1 mx-2"></i></a>
+            <a href="#" class="link-secondary"><i class="bi bi-instagram fs-1 me-2"></i></a>
+            <a href="#" class="link-secondary"> <i class="bi bi-whatsapp fs-1"></i></a>
+          </div>
+        </aside>
+        <hr class="text-white fs-4">
+        <aside>
+          <p class="text-white align-text-bottom fs-6">&copy; LeonelChoque 2023</p>
+        </aside>
+      </section>
+    </footer>
   </body>
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/app.js"></script>
